@@ -1,0 +1,28 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node":true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    // "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": []
+    // "rules": {
+    //   "react/react-in-jsx-scope": "off", // If using React 17+
+    //   "prettier/prettier": "error",
+    //   "no-unused-vars": "warn",
+    //   "semi": ["error", "always"],
+    //   "quotes": ["error", "single"]
+    // }
+  }
+  
