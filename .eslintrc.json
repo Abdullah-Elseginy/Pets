@@ -6,6 +6,8 @@
     },
     "extends": [
       "eslint:recommended",
+      "plugin:import/errors",
+      "plugin:react-hook/recommended",
       "prettier"
     ],
     // "parser": "babel-eslint",
@@ -16,13 +18,10 @@
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "plugins": []
-    // "rules": {
-    //   "react/react-in-jsx-scope": "off", // If using React 17+
-    //   "prettier/prettier": "error",
-    //   "no-unused-vars": "warn",
-    //   "semi": ["error", "always"],
-    //   "quotes": ["error", "single"]
-    // }
+    "plugins": ["react","import"]
+    "rules": {
+      "react/react-in-jsx-scope": 0, // If using React 17+
+      "react/prop-types": 0, // If using React
+    }
   }
   
